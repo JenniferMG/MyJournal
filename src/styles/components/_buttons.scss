@@ -1,0 +1,113 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 3px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-entry {
+    transition: color .35s ease-in-out;
+}
+
+.btn-entry:hover {
+color: lighten($color: $primary, $amount: 40);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: $dark-primary;
+    border-radius: 2px;
+
+    transition: background-color .35s ease-in-out;
+    
+    &:disabled {
+        background-color: lighten($color: $dark-primary, $amount: 40);
+        cursor: initial
+    }
+
+    &:hover {
+        background-color: darken($color: $dark-primary, $amount: 10);
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    border-radius: 2px;
+
+    transition: background-color .35s ease-in-out;
+
+    &:disabled {
+        background-color: lighten($color: $secondary, $amount: 40);
+        cursor: initial
+    }
+
+    &:hover {
+        background-color: darken($color: $secondary, $amount: 10);
+    }
+}
+
+.btn-outline-danger {
+    background-color: transparent;
+    color: $danger;
+    border: 1px solid $danger;
+    
+    &:hover {
+        background-color: $danger;
+        color: white;
+        border: none;
+    }
+}
+
+.google-btn {
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    width: 100%;
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+
+    transition: box-shadow .4s ease;
+
+    .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+    .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+    }
+    .btn-text {
+        float: right;
+        margin: 11px 40px 0 0;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+        background: $button-active-blue;
+    }
+}

@@ -1,0 +1,12 @@
+.loading__main-content {
+    background-color: $primary;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading__icon {
+    color: darken($color: white, $amount: 20);
+}
